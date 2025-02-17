@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blanc: #FFFFFF;
+    --pomme: #E2FCEF;
+    --pomme_granny: #EDFEF6;
+    --correct: #DCFCE7;
+    --forest_day: #0CB981;
+    --forest_night: #057858;
+    --noir: #000000;
+    --night: #1F2937;
+    --dark_grey: #676E77;
+    --light_grey: #E6E7E9;
+    --bg_grey: #F3F4F6;
+    --bouton_rouge: #DB2727;
+    --faux: #FFE2E2;
+}
