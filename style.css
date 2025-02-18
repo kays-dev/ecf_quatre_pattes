@@ -41,7 +41,7 @@ h2 {
 }
 
 h3 {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin: 2vh 0;
 }
@@ -203,7 +203,7 @@ nav {
 /* Section "Notre mission" */
 
 #notre_mission {
-    background-color: var(--pomme_granny);
+    background-color: var(--pomme);
     padding: 10vh 3vw;
 }
 
@@ -243,9 +243,13 @@ nav {
     align-items: center;
 }
 
+#reussite h3 {
+    font-size: 25px;
+}
+
 #div_principale, #div_secondaire {
     display: flex;
-    width: 95%;
+    width: 94vw;
     margin: 0 auto;
     color: var(--blanc);
 }
@@ -263,6 +267,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-shadow: inset 0 -80px 100px var(--night);
 }
 
 #slider_desc {
@@ -310,5 +315,39 @@ nav {
 
 #slider_preview3 {
     background-image: url(img_de_Max_chien.webp);
+}
+
+/* Section "Testez Vos Connaissances"*/
+#quiz {
+    flex-direction: column;
+    background-color: var(--pomme_granny);
+}
+
+.question {
+    width: 70vw;
+    margin: 0 auto;
+    background-color: var(--blanc);
+    border-radius: 10px;
+    box-shadow: 0 4px 4px var(--calque_clair);
+    padding: 2vh;
+    margin-bottom: 5vh;
+}
+
+.reponse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.vrai, .faux {
+    display: flex;
+    align-items: center;
+    padding: 2vh;
+    width: 49%;
+    min-height: 10vh;
+    border-radius: 10px;
+    background-color: var(--bg_grey);
 }
 
