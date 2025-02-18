@@ -21,3 +21,17 @@
     --bouton_rouge: #DB2727;
     --faux: #FFE2E2;
 }
+
+nav, section {
+    display: flex;
+    padding: 2vh 3vw;
+}
+
+nav {
+    justify-content: space-between;
+    background-color: var(--forest_night);
+}
+
+#menu_header a {
+    margin-right: 20px;
+}
