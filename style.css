@@ -22,9 +22,23 @@
     --faux: #FFE2E2;
 }
 
+body {
+    font-family: "Inter", serif;
+}
+
 nav, section {
     display: flex;
 }
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    margin: 10vh 0;
+}
+
+/* HEADER */
 
 nav {
     justify-content: space-between;
@@ -95,3 +109,85 @@ nav {
     font-size: 20px;
     font-weight: 500;
 } 
+
+/* MAIN */
+/* Section "Faites un don" */
+
+#faire_un_don {
+    flex-direction: column;
+}
+
+#don_box {
+    width: 70vw;
+    margin: 0 auto 10vh;
+    padding: 1vh 2vw;
+    box-shadow: 0 4px 4px var(--calque_clair);
+    border-radius: 10px;
+}
+
+#choix_prix, #choix_paiement {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Boites des choix des prix */
+
+.prix_don {
+    border: solid var(--light_grey) 2px;
+    border-radius: 10px;
+    max-width: 30%;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    padding: 1vh;
+}
+
+.prix_don p:first-child {
+    margin: 2vh 0;
+}
+
+.desc_don {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--dark_grey);
+    margin: 2vh 0;
+}
+
+/* Boutons des choix des modes de paiements */
+
+#choix_paiement {
+    justify-content: center;
+    gap: 2vh;
+}
+
+.paiement {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--bg_grey);
+    font-size: 14px;
+    text-align: center;
+    margin: 5vh 0;
+    padding: 2vh 4vh;
+}
+
+/* Boutons de récap du don (link avec JS)*/
+
+#donate_big {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--bouton_rouge);
+    color: var(--blanc);
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    width: 95%;
+    margin: 0 auto 5vh;
+}
+
+#donate_big img {
+    margin-right: 5px;
+}
