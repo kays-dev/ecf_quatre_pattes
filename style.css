@@ -36,6 +36,8 @@ h1, h2 {
 
 h2 {
     margin: 10vh 0;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 /* HEADER */
@@ -190,4 +192,40 @@ nav {
 
 #donate_big img {
     margin-right: 5px;
+}
+
+/* Section "Notre mission" */
+
+#notre_mission {
+    background-color: var(--pomme_granny);
+    padding: 10vh 3vw;
+}
+
+#box_img_text {
+    display: flex;
+    width: 94vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px var(--calque_clair);
+}
+#box_img_text img {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px 0 0 10px;
+}
+
+#nm_box_text {
+    background-color: var(--blanc);
+    padding: 0 2vw;
+    border-radius: 0 10px 10px 0;
+}
+
+#nm_box_text h2 {
+    text-align: left;
+}
+
+#nm_box_text p {
+    color: var(--dark_grey);
+    font-size: 16px;
+    font-weight: 500;
 }
