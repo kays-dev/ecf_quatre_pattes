@@ -40,6 +40,12 @@ h2 {
     font-weight: bold;
 }
 
+h3 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 2vh 0;
+}
+
 /* HEADER */
 
 nav {
@@ -229,3 +235,80 @@ nav {
     font-size: 16px;
     font-weight: 500;
 }
+
+/* Section "Histoire de réussite" */
+
+#reussite {
+    flex-direction: column;
+    align-items: center;
+}
+
+#div_principale, #div_secondaire {
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    color: var(--blanc);
+}
+
+/* Zone principale du slider */
+
+#div_principale {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 4vh;
+    border: none;
+    border-radius: 10px;
+    min-height: 65vh;
+    background-image: url(img_de_Luna_chien.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#slider_desc {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 1vh;
+}
+
+#slider_legend {
+    color: var(--light_grey);
+    font-style: italic;
+    font-size: 12;
+}
+
+
+/* Zone secondaire du slider */
+
+#div_secondaire {
+    justify-content: space-between;
+    margin-bottom: 10vh;
+}
+
+.slider_preview{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+    min-height: 20vh;
+    width: 32%;
+    border: none;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#slider_preview1 {
+    background-image: url(img_de_Luna_chien.webp);
+    border: solid 3px var(--forest_day);
+}
+
+#slider_preview2 {
+    background-image: url(img_de_Oscar_chat.webp);
+}
+
+#slider_preview3 {
+    background-image: url(img_de_Max_chien.webp);
+}
+
