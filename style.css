@@ -24,14 +24,74 @@
 
 nav, section {
     display: flex;
-    padding: 2vh 3vw;
 }
 
 nav {
     justify-content: space-between;
     background-color: var(--forest_night);
+    align-items: center;
+    padding: 2vh 3vw;
+}
+
+#menu_header {
+    display: flex;
+    align-items: center;
 }
 
 #menu_header a {
     margin-right: 20px;
+    color: var(--blanc);
+    text-decoration: none;
 }
+
+#donate {
+    display: flex;
+    padding: 10px;
+    background-color: var(--bouton_rouge);
+    color: var(--blanc);
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    align-items: center;
+}
+
+#donate img {
+    margin-right: 5px;
+}
+
+#hero {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 85vh;
+    background-image: url(img_header.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+#calque_bg {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: var(--calque);
+}
+
+#textbox_hero {
+    position: absolute;
+    z-index: 2;
+    color: var(--blanc);
+    text-align: center;
+}
+
+#textbox_hero h1 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 2vh 0;
+}
+
+#textbox_hero p {
+    font-size: 20px;
+    font-weight: 500;
+} 
