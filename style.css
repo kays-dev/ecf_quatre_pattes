@@ -26,7 +26,7 @@ body {
     font-family: "Inter", serif;
 }
 
-nav, section {
+nav, section, footer {
     display: flex;
 }
 
@@ -439,4 +439,43 @@ nav {
 .tem_location {
     font-size: 20px;
     font-weight: 700;
+}
+
+/* FOOTER*/
+
+footer {
+    background-color: var(--night);
+    padding: 2.5vh 0;
+}
+
+#menu_footer {
+    display: flex;
+    width: 94vw;
+    margin: 0 auto;
+    gap: 10vw;
+    color: var(--blanc);
+}
+
+#menu_footer h3 {
+    font-weight: 700;
+}
+
+#menu_footer p {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.menus_footer {
+    width: 30%;
+}
+
+#mail_box {
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+}
+
+#mail_box img {
+    max-height: 23px;
+    max-width: 23px;
 }
