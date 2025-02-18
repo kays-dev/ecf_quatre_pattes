@@ -351,3 +351,41 @@ nav {
     background-color: var(--bg_grey);
 }
 
+/* Section "Notre Impact"*/
+
+#impact {
+    flex-direction: column;
+    background-color: var(--pomme_granny);
+}
+
+#impact_number {
+    display: flex;
+    width: 94vw;
+    margin: 0 auto 10vh;
+    justify-content: space-between;
+}
+
+.impact_numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    width: 30%;
+}
+
+.impact_numbers img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 2vh;
+}
+
+.impact_numbers p:nth-child(2){
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.impact_numbers p:nth-child(3) {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--dark_grey);
+}
