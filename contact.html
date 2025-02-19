@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merienda:wght@300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/logo-green-icon.png" type="image/x-icon">    
+    <title>Page de contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="icons_header">
+                <img src="Images/logo-quattre-pattes.PNG" alt="Logo de Quatre Pattes">
+                <img src="Images/Close.png" alt="icône de fermeture du menu" id="close_menu">
+            </div>
+            <div id="menu_header">
+                <a href="index.html">Accueil</a>
+                <a href="contact.html">Contact</a>
+                <button id="donate">
+                    <img src="Images/Heart.png" alt="Icône coeur">
+                    Faire un don
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Contactez-nous</h1>
+        <div id="form_box">
+            <form action="">
+                <label for="nom">Nom</label>
+                <input type="text" name="nom_complet" id="nom">
+                <label for="mail">Adresse mail</label>
+                <input type="text" name="email" id="mail">
+                <label for="sujet_msg">Sujet</label>
+                <select name="subject" id="sujet_msg">
+                    <option value="don">Faire un don</option>
+                    <option value="bénévolat">Devenir bénévole</option>
+                    <option value="global">Questions générales</option>
+                </select>
+                <label for="contenu_msg">Message</label>
+                <textarea name="msg" id="contenu_msg"></textarea>
+                <button id="submit_btn">
+                    <img src="Images/Sent.png" alt="icône d'envoie du message">
+                    Envoyer
+                </button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="menu_footer">
+            <div class="menus_footer">
+                <h3>Quatre pattes</h3>
+                <p>Ensemble, protégeons les animaux et donnons-leur une vie meilleure.</p>
+            </div>
+            <div class="menu_footer">
+                <h3>Contact</h3>
+                <div id="mail_box">
+                    <img src="Images/mail-icon.png" alt="icône d'adresse mail">
+                    <p>contact@quatrepattes.org</p>
+                </div>
+            </div>
+            <div class="menu_footer">
+                <h3>Suivez-nous</h3>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="dyn.js"></script>
+</body>
+</html>

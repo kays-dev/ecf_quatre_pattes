@@ -1,0 +1,59 @@
+h1 {
+    margin: 5vh 0 ;
+}
+
+/* Formulaire */
+
+#form_box {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin: 0 auto 10vh;
+    padding: 1vh 2vw;
+    box-shadow: 0 4px 4px var(--calque_clair);
+    border-radius: 10px;
+    padding: 4vh 6vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+label {
+    color: var(--dark_grey);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+input, select, textarea {
+    margin-bottom: 2vh;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 1vh;
+}
+
+input, select {
+    height: 5vh;
+    border: solid 2px var(    --light_grey) ;
+}
+
+textarea {
+    height: 20vh;
+    border: solid 2px var(    --light_grey) ;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5vw;
+    height: 6vh;
+    background-color: var(--forest_night);
+    border: none;
+    border-radius: 10px;
+    color: var(--blanc);
+    font-size: 14px;
+    font-weight: bold;
+}
