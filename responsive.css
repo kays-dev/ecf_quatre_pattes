@@ -1,0 +1,19 @@
+/* Responsive pour format tablette */
+
+@media screen and (max-width : 1345px) and (min-width : 1000px ) {
+    /* PAGE ACCUEIL */
+
+
+    /* PAGE CONTACT */
+    
+}
+
+/* Responsive pour format mobile */
+
+@media screen and (max-width : 999px) {
+    /* PAGE ACCUEIL */
+
+
+    /* PAGE CONTACT */
+
+}

@@ -170,9 +170,12 @@ nav {
 }
 
 .paiement {
+    display: flex;
+    align-items: center;
     border: none;
     border-radius: 10px;
     background-color: var(--bg_grey);
+    height: 7vh;
     font-size: 14px;
     text-align: center;
     margin: 5vh 0;
@@ -214,10 +217,13 @@ nav {
     border-radius: 10px;
     box-shadow: 0 4px 4px var(--calque_clair);
 }
+
 #box_img_text img {
     width: 50%;
     margin: 0 auto;
     border-radius: 10px 0 0 10px;
+    object-fit: cover;
+    object-position: center;
 }
 
 #nm_box_text {
@@ -228,6 +234,7 @@ nav {
 
 #nm_box_text h2 {
     text-align: left;
+    margin-bottom: 5vh;
 }
 
 #nm_box_text p {
