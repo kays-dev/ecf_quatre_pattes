@@ -55,6 +55,10 @@ nav {
     padding: 2vh 3vw;
 }
 
+#close_menu {
+    visibility: hidden;
+}
+
 #menu_header {
     display: flex;
     align-items: center;
@@ -407,7 +411,6 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 94vw;
-    max-height: 50vh;
     margin: 0 auto 10vh auto;
 }
 

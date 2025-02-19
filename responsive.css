@@ -1,17 +1,231 @@
 /* Responsive pour format tablette */
 
-@media screen and (max-width : 1345px) and (min-width : 1000px ) {
+@media screen and (max-width : 1346px) and (min-width : 1145px ) {
     /* PAGE ACCUEIL */
 
+    h2 {
+        margin: 5vh 0;
+    }
+
+    /* Section "Faire un don" */
+    #choix_prix {
+        height: 18vh;
+    }
+
+    .prix_don {
+        height: 100%;
+    }
+
+    /* Section "Témoignages" */
+
+    #temoignages_box {
+        max-height: 60vh;
+    }
 
     /* PAGE CONTACT */
-    
+
 }
 
 /* Responsive pour format mobile */
 
-@media screen and (max-width : 999px) {
+@media screen and (max-width : 1145px) and (min-width:650px){
     /* PAGE ACCUEIL */
+
+    /* Section "Faire un don" */
+    #choix_prix {
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    .prix_don {
+        min-width: 100%;
+    }
+
+    /* Section "Notre mission" */
+
+    #notre_mission {
+        height: 95vh;
+    }
+    #box_img_text {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #box_img_text img {
+        height: 50%;
+        width: 100%;
+        border-radius: 10px 10px 0 0 ;
+    }
+
+    #nm_box_text {
+        height: 50%;
+        border-radius: 0 0 10px 10px ;
+    }
+
+    #nm_box_text h2 {
+    margin: 4vh 0;
+    }
+
+    #nm_box_text p {
+        font-size: 12px;
+    }
+
+    /* Section "Testez vos connaissances" */
+    .reponse {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .vrai, .faux {
+        width: 100%;
+    }
+
+    /* Section "Testez vos connaissances" */
+
+    #impact_number {
+        flex-direction: column;
+        align-items: center;
+        gap: 8vh;
+        text-align: center;
+    }
+
+    /* Section "Témoignages" */
+
+    #temoignages_box {
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .temoignage {
+        width: 100%;
+    }
+
+    /* PAGE CONTACT */
+
+}
+
+@media screen and (max-width : 650px) {
+    /* PAGE ACCUEIL */
+
+    h2 {
+        margin: 8vh 0;
+    }
+
+    /* Nav */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1vh;
+    }
+
+    #close_menu {
+        visibility: visible;
+        width: 20px;
+        height: 20px;
+        justify-self: flex-end;
+    }
+
+    #icons_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    #menu_header {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 2vh;
+    }
+
+    #menu_header a {
+        padding: 0 5vw;
+    }
+
+    #donate {
+        width: 100%;
+    }
+
+    /* Section "Faire un don" */
+    #choix_prix {
+        flex-direction: column;
+        gap: 3vh;
+    }
+
+    .prix_don {
+        min-width: 100%;
+    }
+
+    /* Section "Notre mission" */
+
+    #notre_mission {
+        height: 95vh;
+    }
+    #box_img_text {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    #box_img_text img {
+        height: 50%;
+        width: 100%;
+        border-radius: 10px 10px 0 0 ;
+    }
+
+    #nm_box_text {
+        height: 50%;
+        border-radius: 0 0 10px 10px ;
+    }
+
+    #nm_box_text h2 {
+    margin: 4vh 0;
+    }
+
+    #nm_box_text p {
+        font-size: 12px;
+    }
+
+    /* Section "Testez vos connaissances" */
+    .reponse {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .vrai, .faux {
+        width: 100%;
+    }
+
+    /* Section "Testez vos connaissances" */
+
+    #impact_number {
+        flex-direction: column;
+        align-items: center;
+        gap: 8vh;
+        text-align: center;
+    }
+
+    /* Section "Témoignages" */
+
+    #temoignages_box {
+        flex-direction: column;
+        gap: 4vh;
+    }
+
+    .temoignage {
+        width: 100%;
+    }
+
+    /* Footer */
+
+    #menu_footer {
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .menus_footer {
+        width: 100%;
+    }
 
 
     /* PAGE CONTACT */
