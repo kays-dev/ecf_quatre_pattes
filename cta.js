@@ -1,4 +1,4 @@
-// Evènement de click sur le prix des dons
+// Récupération des éléments dans le DOM
 let prixDons = document.getElementsByClassName("prix_don");
 let recurPmt = document.getElementsByClassName("paiement");
 let subBtn = document.getElementById("donate_big");
