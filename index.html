@@ -40,31 +40,31 @@
             <h2>Faites un don</h2>
             <div id="don_box">
                 <div id="choix_prix">
-                    <div id="don1" class="prix_don">
+                    <button id="don1" class="prix_don" onclick="changeBtn(this)">
                         <p>10€</p>
                         <p class="desc_don">permet de nourrir 5 animaux pendant une journée</p>
-                    </div>
-                    <div id="don2" class="prix_don">
+                    </button>
+                    <button id="don2" class="prix_don" onclick="changeBtn(this)">
                         <p>20€</p>
                         <p class="desc_don">permet d'héberger un animal sauvage pendant une nuit</p>
-                    </div>
-                    <div id="don3" class="prix_don">
+                    </button>
+                    <button id="don3" class="prix_don" onclick="changeBtn(this)">
                         <p>50€</p>
                         <p class="desc_don">permet de financer les soins vétérinaires complets pour un animal</p>
-                    </div>
+                    </button>
                 </div>
                 <div id="choix_paiement">
-                    <div id="paiement1" class="paiement">
+                    <button id="paiement1" class="paiement" onclick="changeBtn(this)">
                         <p>Une fois</p>
-                    </div>
-                    <div id="paiement2" class="paiement">
+                    </button>
+                    <button id="paiement2" class="paiement" onclick="changeBtn(this)">
                         <p>Mensuel</p>
-                    </div>
-                    <div id="paiement3" class="paiement">
+                    </button>
+                    <button id="paiement3" class="paiement" onclick="changeBtn(this)">
                         <p>Annuel</p>
-                    </div>
+                    </button>
                 </div>
-                <button id="donate_big">
+                <button id="donate_big" onclick="showRecap()">
                     <img src="Images/Heart.png" alt="Icône coeur">
                     Faire un don
                 </button>
@@ -212,6 +212,6 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="interactions.js"></script>
+    <script src="cta.js"></script>
 </body>
 </html>

@@ -153,11 +153,18 @@ nav {
     border: solid var(--light_grey) 2px;
     border-radius: 10px;
     max-width: 30%;
+    background-color: var(--blanc);
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     padding: 1vh;
 }
+
+.prix_don_onclick {
+    background-color: var(--pomme_granny);
+    border: solid 3px var(--forest_day) ;
+    cursor: pointer;
+} 
 
 .prix_don p:first-child {
     margin: 2vh 0;
@@ -188,6 +195,15 @@ nav {
     text-align: center;
     margin: 5vh 0;
     padding: 2vh 4vh;
+}
+
+.paiement_onclick {
+    background-color: var(--forest_day);
+    color: var(--blanc);
+}
+
+.paiement_inrecap {
+    text-transform: lowercase;
 }
 
 /* Boutons de récap du don (link avec JS)*/
