@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,16 +35,24 @@
             <form action="">
                 <label for="nom">Nom</label>
                 <input type="text" name="nom_complet" id="nom">
+                <div class="obligatoire"></div>
+
                 <label for="mail">Adresse mail</label>
                 <input type="text" name="email" id="mail">
+                <div class="obligatoire"></div>
+
                 <label for="sujet_msg">Sujet</label>
                 <select name="subject" id="sujet_msg">
+                    <option value="sélection" selected>Sélectionner une option</option>
                     <option value="don">Faire un don</option>
                     <option value="bénévolat">Devenir bénévole</option>
                     <option value="global">Questions générales</option>
                 </select>
+
                 <label for="contenu_msg">Message</label>
                 <textarea name="msg" id="contenu_msg"></textarea>
+                <div class="obligatoire"></div>
+
                 <button id="submit_btn">
                     <img src="Images/Sent.png" alt="icône d'envoie du message">
                     Envoyer
@@ -72,6 +80,6 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script src="dyn.js"></script>
+    <script src="form.js"></script>
 </body>
 </html>

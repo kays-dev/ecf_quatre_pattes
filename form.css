@@ -28,7 +28,6 @@ label {
 }
 
 input, select, textarea {
-    margin-bottom: 2vh;
     border-radius: 10px;
     font-size: 14px;
     padding: 1vh;
@@ -36,12 +35,27 @@ input, select, textarea {
 
 input, select {
     height: 5vh;
-    border: solid 2px var(    --light_grey) ;
+    border: solid 2px var(--light_grey) ;
 }
 
 textarea {
     height: 20vh;
-    border: solid 2px var(    --light_grey) ;
+    border: solid 2px var(--light_grey) ;
+}
+
+.obligatoire {
+    color: var(--bouton_rouge) ;
+    font-size: 10px;
+    margin-left: 1vh;
+}
+
+select option:first-of-type {
+    color: var(--dark_grey);
+}
+
+
+form div, select {
+    margin-bottom: 2vh;
 }
 
 button {

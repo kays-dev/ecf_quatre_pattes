@@ -22,6 +22,10 @@
     --faux: #FFE2E2;
 }
 
+button:hover, select:hover{
+    cursor: pointer;
+}
+
 body {
     font-family: "Inter", serif;
 }
@@ -91,7 +95,7 @@ nav {
     align-items: center;
     position: relative;
     min-height: 85vh;
-    background-image: url("../Images/img_header.webp");
+    background-image: url("/Images/img_header.webp");
     background-position: center;
     background-size: cover;
 }
@@ -293,7 +297,6 @@ nav {
     font-size: 12;
 }
 
-
 /* Zone secondaire du slider */
 
 #div_secondaire {
@@ -316,16 +319,16 @@ nav {
 }
 
 #slider_preview1 {
-    background-image: url("../Images/img_de_Luna_chien.webp");
+    background-image: url("/Images/img_de_Luna_chien.webp");
     border: solid 3px var(--forest_day);
 }
 
 #slider_preview2 {
-    background-image: url("../Images/img_de_Oscar_chat.webp");
+    background-image: url("/Images/img_de_Oscar_chat.webp");
 }
 
 #slider_preview3 {
-    background-image: url("../Images/img_de_Max_chien.webp");
+    background-image: url("/Images/img_de_Max_chien.webp");
 }
 
 /* Section "Testez Vos Connaissances"*/
