@@ -356,7 +356,7 @@ nav {
     background-color: var(--pomme_granny);
 }
 
-.question {
+.question, .score {
     width: 70vw;
     margin: 0 auto;
     background-color: var(--blanc);
@@ -366,7 +366,7 @@ nav {
     margin-bottom: 5vh;
 }
 
-.reponse {
+.reponse, .score {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -384,6 +384,35 @@ nav {
     background-color: var(--bg_grey);
 }
 
+.mauvaise_reponse, .bonne_reponse{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2vh;
+    border-radius: 10px;
+}
+
+
+.mauvaise_reponse {
+    color: var(--dark_grey);
+    background-color: var(--faux);
+}
+
+.bonne_reponse {
+    color: var(--dark_grey);
+    background-color: var(--correct);
+}
+
+.mauvaise_reponse img, .bonne_reponse img {
+    margin-right: 2vw;
+}
+
+.score {
+    justify-content: center;
+    background-color: var(--forest_day);
+    color: var(--blanc);
+    font-size: 30px;
+}
 /* Section "Notre Impact"*/
 
 #impact {

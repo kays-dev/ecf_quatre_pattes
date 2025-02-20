@@ -114,10 +114,10 @@
             <div id="question1" class="question">
                 <h3>Les associations gardent la majorité des dons pour leur fonctionnement</h3>
                 <div class="reponse">
-                    <div class="vrai">
+                    <div class="vrai" id="vrai1" onclick="checkAswr(this)">
                         <p>Vrai, les associations utilisent plus de 50% des dons pour leurs frais de fonctionnement</p>
                     </div>
-                    <div class="faux">
+                    <div class="faux" id="faux1" onclick="checkAswr(this)">
                         <p>Faux !</p>
                     </div>
                 </div>
@@ -125,21 +125,21 @@
             <div id="question2" class="question">
                 <h3>Les refuges ne prennent que les animaux en bonne santé</h3>
                 <div class="reponse">
-                    <div class="vrai">
+                    <div class="vrai" id="vrai2" onclick="checkAswr(this)">
                         <p>Vrai, ils refusent les animaux malades car c'est trop coûteux</p>
                     </div>
-                    <div class="faux">
+                    <div class="faux" id="faux2" onclick="checkAswr(this)">
                         <p>Faux !</p>
                     </div>
                 </div>
             </div>
             <div id="question3" class="question">
                 <h3>Les associations ont trop de moyens grâce aux dons</h3>
-                <div class="reponse">
-                    <div class="vrai">
+                <div class="reponse" >
+                    <div class="vrai" id="vrai3" onclick="checkAswr(this)">
                         <p>Vrai, elles reçoivent beaucoup d'argent des donateurs</p>
                     </div>
-                    <div class="faux">
+                    <div class="faux" id="faux3" onclick="checkAswr(this)">
                         <p>Faux !</p>
                     </div>
                 </div>
@@ -214,5 +214,6 @@
     <!-- SCRIPTS -->
     <script src="cta.js"></script>
     <script src="diaporama.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>

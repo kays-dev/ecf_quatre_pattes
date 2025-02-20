@@ -17,7 +17,7 @@ function unclick(x,y){
 
 function changePvw(image){
 
-    // Changement du style des boutons de don
+    // Changement des images dans le diaporama
     if (image.id===previews[0].id){
         previews[0].classList.add("slider_preview_onclick");
         unclick(previews[1],previews[2]);

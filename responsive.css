@@ -71,7 +71,7 @@
     }
 
     /* Section "Testez vos connaissances" */
-    .reponse {
+    .reponse:not(.mauvaise_reponse, .bonne_reponse) {
         flex-direction: column;
         gap: 2vh;
     }
@@ -184,7 +184,7 @@
     }
 
     /* Section "Testez vos connaissances" */
-    .reponse {
+    .reponse:not(.mauvaise_reponse, .bonne_reponse) {
         flex-direction: column;
         gap: 2vh;
     }
