@@ -158,12 +158,12 @@ nav {
     font-size: 20px;
     text-align: center;
     padding: 1vh;
+    cursor: pointer;
 }
 
 .prix_don_onclick {
     background-color: var(--pomme_granny);
     border: solid 3px var(--forest_day) ;
-    cursor: pointer;
 } 
 
 .prix_don p:first-child {
@@ -332,6 +332,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 }
 
 #slider_preview1 {
@@ -387,11 +388,10 @@ nav {
 .mauvaise_reponse, .bonne_reponse{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 2vh;
     border-radius: 10px;
 }
-
 
 .mauvaise_reponse {
     color: var(--dark_grey);

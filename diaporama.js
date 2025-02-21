@@ -5,7 +5,7 @@ let divPrincipaleDesc = document.getElementById("slider_desc");
 let divPrincipaleLegend = document.getElementById("slider_legend");
 let previews = document.getElementsByClassName("slider_preview");
 
-function unclick(x,y){
+function unclickPrev(x,y){
 
     // Décliquer un autre preview
     if (x.classList.contains("slider_preview_onclick")==true){
@@ -20,7 +20,7 @@ function changePvw(image){
     // Changement des images dans le diaporama
     if (image.id===previews[0].id){
         previews[0].classList.add("slider_preview_onclick");
-        unclick(previews[1],previews[2]);
+        unclickPrev(previews[1],previews[2]);
         divPrincipale.style.backgroundImage=`url("/Images/img_de_Luna_chien.webp")`;
         divPrincipaleTitle.innerHTML=previews[0].querySelector("h3").innerHTML;
         divPrincipaleDesc.innerHTML="Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.";
@@ -28,7 +28,7 @@ function changePvw(image){
 
     } else if (image.id===previews[1].id){
         previews[1].classList.add("slider_preview_onclick");
-        unclick(previews[0],previews[2]);
+        unclickPrev(previews[0],previews[2]);
         divPrincipale.style.backgroundImage=`url("/Images/img_de_Oscar_chat.webp")`;
         divPrincipaleTitle.innerHTML=previews[1].querySelector("h3").innerHTML;
         divPrincipaleDesc.innerHTML="Abandonné dans une forêt, Oscar était terrifié par les humains. Grâce à nos soins, de la patience et de l'amour, il est devenu un chat confiant et affectueux.";
@@ -36,7 +36,7 @@ function changePvw(image){
 
     } else if (image.id===previews[2].id){
         previews[2].classList.add("slider_preview_onclick");
-        unclick(previews[0],previews[1]);
+        unclickPrev(previews[0],previews[1]);
         divPrincipale.style.backgroundImage=`url("/Images/img_de_Max_chien.webp")`;
         divPrincipaleTitle.innerHTML=previews[2].querySelector("h3").innerHTML;
         divPrincipaleDesc.innerHTML="Trouvée dans la rue avec une patte cassée, Luna a été soignée et a retrouvé sa joie de vivre. Elle coule maintenant des jours heureux dans sa nouvelle famille.";
