@@ -1,0 +1,451 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* Couleurs de l'enseigne */
+:root {
+    --blanc: #FFFFFF;
+    --pomme: #E2FCEF;
+    --pomme_granny: #EDFEF6;
+    --correct: #DCFCE7;
+    --forest_day: #0CB981;
+    --forest_night: #057858;
+    --noir: #000000;
+    --calque: rgb(0, 0, 0, 0.5);
+    --calque_clair: rgb(0, 0, 0, 0.3);
+    --night: #1F2937;
+    --dark_grey: #676E77;
+    --light_grey: #E6E7E9;
+    --bg_grey: #F3F4F6;
+    --bouton_rouge: #DB2727;
+    --faux: #FFE2E2;
+}
+
+    /* Police du texte */
+body {
+    font-family: "Inter", serif;
+}
+
+/* SPECIFICITES COMMUNES DES ELELEMENTS DE LA PAGE */
+    /* Flexboxs */
+nav, section, footer, #menu_header, #donate, #choix_prix, #choix_paiement, .paiement, #donate_big, #box_img_text, #div_principale, #div_secondaire, .slider_preview, .reponse, .score, .vrai, .faux, .mauvaise_reponse, .bonne_reponse, #impact_number, .impact_numbers, #temoignages_box, .temoignage, .tem_desc, #menu_footer, #mail_box {
+    display: flex;
+}
+
+        /* -Direction en colonne */
+#faire_un_don, #reussite, #div_principale, #quiz, #impact, .impact_numbers, #temoignages, .temoignage, .tem_desc {
+    flex-direction: column;
+}
+
+        /* -Axe principal */
+nav, #div_secondaire, .reponse, #impact_number, #temoignages_box {
+    justify-content: space-between;
+}
+
+#hero, #choix_paiement, #donate_big, .slider_preview, .score, .tem_desc {
+    justify-content: center;
+}
+
+#choix_prix {
+    justify-content: space-evenly;
+}
+
+        /* -Axe secondaire */
+nav, #menu_header, #donate, #hero, #choix_prix, #choix_paiement, .paiement, #donate_big, #reussite, .slider_preview, .reponse, .score, .vrai, .faux, .impact_numbers, #mail_box  {
+    align-items: center;
+}
+
+    /* Texte */
+        /* -Alignement */
+h1, h2, #textbox_hero, .prix_don, .paiement {
+    text-align: center;
+}
+
+        /* -Taille */
+h2, .score {
+    font-size: 30px;
+}
+
+h3, #textbox_hero p, .prix_don, .impact_numbers p:nth-child(2), .tem_location {
+    font-size: 20px;
+}
+
+#nm_box_text p, #slider_desc, .reponse, .score, .impact_numbers p:nth-child(3), .tem_citation {
+    font-size: 16px;
+}
+
+#donate, .desc_don, .paiement, #donate_big, #menu_footer p {
+    font-size: 14px;
+}
+
+        /* -Epaisseur */
+h2, h3, #textbox_hero h1, .prix_don {
+    font-weight: bold;
+}
+
+#donate, #donate_big, .impact_numbers p:nth-child(2), .tem_location, #menu_footer h3 {
+    font-weight: 700;
+}
+
+#textbox_hero p, .desc_don, #nm_box_text p, #slider_desc, .reponse, .score, .impact_numbers p:nth-child(3), .tem_citation  {
+    font-weight: 500;
+}
+
+        /* -Couleur */
+#menu_header a, #donate, #textbox_hero, .paiement_onclick, #donate_big, #div_principale, #div_secondaire, .score, #menu_footer {
+    color: var(--blanc);
+}
+
+.desc_don, #nm_box_text p, .mauvaise_reponse, .bonne_reponse, .impact_numbers p:nth-child(3), .tem_citation {
+    color: var(--dark_grey);
+}
+
+        /* -Marges */
+h2 {
+    margin: 10vh 0;
+}
+
+h3 {
+    margin: 2vh 0;
+}
+
+    /* Sections */
+        /* -Largeur */
+#don_box, .question, .score {
+    width: 70vw;
+}
+
+#box_img_text, #impact_number, #temoignages_box, #menu_footer {
+    width: 94vw;
+}
+
+        /* -Fond */
+.prix_don, #nm_box_text, .question, .score {
+    background-color: var(--blanc);
+}
+
+.paiement, .vrai, .faux {
+    background-color: var(--bg_grey);
+}
+
+        /* -Marges */
+#box_img_text, #div_principale, #div_secondaire, .question, .score, #menu_footer {
+    margin: 0 auto;
+}
+
+#don_box, #impact_number, #temoignages_box {
+    margin: 0 auto 10vh;
+}
+
+.prix_don p:first-child, .desc_don {
+    margin: 2vh 0;
+}
+
+        /* -Bordures */
+#don_box, .prix_don, .paiement, #box_img_text, #div_principale, .slider_preview, .question, .score, .vrai, .faux, .mauvaise_reponse, .bonne_reponse, .temoignage {
+    border-radius: 10px;
+}
+
+        /* -Ombres extérieures */
+#don_box, #box_img_text, .question, .score, .temoignage {
+    box-shadow: 0 4px 4px var(--calque_clair);
+}
+
+    /* Images */
+        /* -Position et placement */
+#hero, #div_principale, .slider_preview {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#box_img_text img, .temoignage img {
+    object-fit: cover;
+    object-position: center;
+}
+
+    /* Zones de sélection */
+button:hover, select:hover, .prix_don, .slider_preview, .vrai, .faux{
+    cursor: pointer;
+}
+
+/* HEADER */
+    /* Nav */
+nav {
+    background-color: var(--forest_night);
+    padding: 2vh 3vw;
+}
+
+#close_menu {
+    visibility: hidden;
+}
+
+#menu_header a {
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+#donate {
+    padding: 10px;
+    background-color: var(--bouton_rouge);
+    border-radius: 5px;
+    border: none;
+}
+
+#donate img {
+    margin-right: 5px;
+}
+
+    /* Hero */
+#hero {
+    position: relative;
+    min-height: 85vh;
+    background-image: url("/Images/img_header.webp");
+}
+
+#calque_bg {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: var(--calque);
+}
+
+#textbox_hero {
+    position: absolute;
+    z-index: 2;
+}
+
+#textbox_hero h1 {
+    font-size: 50px;
+    padding: 2vh 0;
+}
+
+/* MAIN */
+    /* Section "Faites un don" */
+#don_box {
+    padding: 1vh 2vw;
+}
+
+        /* -Boutons des choix des prix */
+.prix_don {
+    border: solid var(--light_grey) 2px;
+    max-width: 30%;
+    padding: 1vh;
+}
+
+            /* --Boutons des choix des prix: ONCLICK */
+.prix_don_onclick {
+    background-color: var(--pomme_granny);
+    border: solid 3px var(--forest_day) ;
+} 
+
+        /* -Boutons des choix des modes de paiements */
+#choix_paiement {
+    gap: 2vh;
+}
+
+.paiement {
+    border: none;
+    height: 7vh;
+    margin: 5vh 0;
+    padding: 2vh 4vh;
+}
+
+            /* --Boutons des choix des modes de paiements: ONCLICK */
+.paiement_onclick {
+    background-color: var(--forest_day);
+}
+
+        /* -Boutons de récap du don */
+#donate_big {
+    padding: 10px;
+    background-color: var(--bouton_rouge);
+    border-radius: 5px;
+    border: none;
+    width: 95%;
+    margin: 0 auto 5vh;
+}
+
+#donate_big img {
+    margin-right: 5px;
+}
+
+    /* Section "Notre mission" */
+#notre_mission {
+    background-color: var(--pomme);
+    padding: 10vh 3vw;
+}
+
+#box_img_text img {
+    width: 50%;
+    border-radius: 10px 0 0 10px;
+}
+
+#nm_box_text {
+    padding: 0 2vw;
+    border-radius: 0 10px 10px 0;
+}
+
+#nm_box_text h2 {
+    text-align: left;
+    margin-bottom: 5vh;
+}
+
+    /* Section "Histoire de réussite" */
+#reussite h3 {
+    font-size: 25px;
+}
+
+#div_principale, #div_secondaire {
+    width: 80vw;
+}
+
+        /* -Zone principale du slider */
+#div_principale {
+    justify-content: flex-end;
+    padding: 4vh;
+    border: none;
+    min-height: 65vh;
+    background-image: url("/Images/img_de_Luna_chien.webp");
+    box-shadow: inset 0 -80px 100px var(--night);
+}
+
+#slider_desc {
+    margin-bottom: 1vh;
+}
+
+#slider_legend {
+    color: var(--light_grey);
+    font-style: italic;
+    font-size: 12px;
+}
+
+        /* -Zone secondaire du slider */
+#div_secondaire {
+    margin-bottom: 10vh;
+}
+
+.slider_preview {
+    margin-top: 3vh;
+    min-height: 20vh;
+    width: 32%;
+    border: none;
+}
+
+#slider_preview1 {
+    background-image: url("/Images/img_de_Luna_chien.webp");
+}
+
+#slider_preview2 {
+    background-image: url("/Images/img_de_Oscar_chat.webp");
+}
+
+#slider_preview3 {
+    background-image: url("/Images/img_de_Max_chien.webp");
+}
+
+            /* --Previews des animaux sauvés: ONCLICK */
+.slider_preview_onclick {
+    border: solid 3px var(--forest_day);
+}
+
+    /* Section "Testez Vos Connaissances"*/
+#quiz {
+    background-color: var(--pomme_granny);
+}
+
+        /* -Zones de réponse */
+.question, .score {
+    padding: 2vh;
+    margin-bottom: 5vh;
+}
+
+.vrai, .faux {
+    padding: 2vh;
+    width: 49%;
+    min-height: 10vh;
+}
+
+            /* --Boutons de réponse: ONCLICK */
+.mauvaise_reponse, .bonne_reponse {
+    justify-content: flex-start;
+    padding: 2vh;
+}
+
+.mauvaise_reponse {
+    background-color: var(--faux);
+}
+
+.bonne_reponse {
+    background-color: var(--correct);
+}
+
+.mauvaise_reponse img, .bonne_reponse img {
+    margin-right: 2vw;
+}
+
+.score {
+    background-color: var(--forest_day);
+}
+
+    /* Section "Notre Impact"*/
+#impact {
+    background-color: var(--pomme_granny);
+}
+
+.impact_numbers {
+    gap: 2vh;
+    width: 30%;
+}
+
+.impact_numbers img {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 2vh;
+}
+
+    /* Section "Témoignages"*/
+.temoignage {
+    width: 30%;
+}
+
+.temoignage img {
+    max-height: 182px;
+    border-radius: 10px 10px 0 0;
+}
+
+.tem_desc {
+    padding: 3vh;
+    border-radius: 0 0 10px 10px;
+}
+
+.tem_desc p:first-child {
+    margin-bottom: 2vh;
+}
+
+/* FOOTER*/
+footer {
+    background-color: var(--night);
+    padding: 2.5vh 0;
+}
+
+#menu_footer {
+    gap: 10vw;
+}
+
+.menus_footer {
+    width: 30%;
+}
+
+#mail_box {
+    gap: 0.5vw;
+}
+
+#mail_box img {
+    max-height: 23px;
+    max-width: 23px;
+}

@@ -3,16 +3,19 @@ document.getElementById("submit_btn")
 addEventListener("submit", (e)=>{
     e.preventDefault()
     submitCheck()
+
 })
+
+// Récup pour accès au DOM
+let contact= document.getElementById("nom");
+let contactM= document.getElementById("mail");
+let message= document.getElementById("contenu_msg");
+let selection= document.getElementById("sujet_msg");
+
+let requiredAlert= document.getElementsByClassName("obligatoire");
 
 // FONCTION DE VALIDATION DU FORMULAIRE
 function submitCheck(){
-    // Récup pour accès au DOM
-    let contact= document.getElementById("nom");
-    let contactM= document.getElementById("mail");
-    let message= document.getElementById("contenu_msg");
-
-    let requiredAlert= document.getElementsByClassName("obligatoire");
 
     // Critère de validation du formulaire
     let valide=true;
@@ -55,6 +58,31 @@ function submitCheck(){
 
     // Validation du formulaire
     if (valide==true){
-        alert("Formulaire envoyé avec succès !")
+        alert("Formulaire envoyé avec succès !");
+        contact.value="";
+        contactM.value="";
+        message.value="";
+        selection.value="sélection";
+    }
+
+    for (let i=0; i<requiredAlert.length; i++){
+        if (requiredAlert[i].innerHTML!==""){
+            contact.addEventListener("change", (e)=>{
+                e.preventDefault;
+                requiredAlert[0].innerHTML="";
+            })
+            contactM.addEventListener("change", (e)=>{
+                e.preventDefault;
+                if (valMail(contactM)==true){
+                    requiredAlert[1].innerHTML="";
+                } else if (valMail(contactM)!==true && contactM.value!==""){
+                    requiredAlert[1].innerHTML= "L'adresse mail est invalide.";
+                }
+            })
+            message.addEventListener("change", (e)=>{
+                e.preventDefault;
+                requiredAlert[2].innerHTML="";
+            })
+        }
     }
 }

@@ -1,13 +1,12 @@
-/* Responsive pour format tablette */
+/* FORMAT TABLETTE */
 
-@media screen and (max-width : 1346px) and (min-width : 1145px ) {
+@media screen and (max-width : 1346px) and (min-width:1145px) {
     /* PAGE ACCUEIL */
-
     h2 {
         margin: 5vh 0;
     }
 
-    /* Section "Faire un don" */
+        /* Section "Faire un don" */
     #choix_prix {
         height: 18vh;
     }
@@ -16,22 +15,17 @@
         height: 100%;
     }
 
-    /* Section "Témoignages" */
-
+        /* Section "Témoignages" */
     #temoignages_box {
         max-height: 60vh;
     }
-
-    /* PAGE CONTACT */
-
 }
 
-/* Responsive pour format mobile */
+/* FORMAT MOBILE (paysage et portrait) */
 
-@media screen and (max-width : 1145px) and (min-width:650px){
+@media screen and (max-width : 1145px) and (min-width:650px) {
     /* PAGE ACCUEIL */
-
-    /* Section "Faire un don" */
+        /* Section "Faire un don" */
     #choix_prix {
         flex-direction: column;
         gap: 3vh;
@@ -41,8 +35,7 @@
         min-width: 100%;
     }
 
-    /* Section "Notre mission" */
-
+        /* Section "Notre mission" */
     #notre_mission {
         height: 95vh;
     }
@@ -70,7 +63,7 @@
         font-size: 12px;
     }
 
-    /* Section "Testez vos connaissances" */
+        /* Section "Testez vos connaissances" */
     .reponse:not(.mauvaise_reponse, .bonne_reponse) {
         flex-direction: column;
         gap: 2vh;
@@ -80,8 +73,7 @@
         width: 100%;
     }
 
-    /* Section "Testez vos connaissances" */
-
+        /* Section "Testez vos connaissances" */
     #impact_number {
         flex-direction: column;
         align-items: center;
@@ -89,8 +81,7 @@
         text-align: center;
     }
 
-    /* Section "Témoignages" */
-
+        /* Section "Témoignages" */
     #temoignages_box {
         flex-direction: column;
         gap: 4vh;
@@ -103,12 +94,11 @@
 
 @media screen and (max-width : 650px) {
     /* PAGE ACCUEIL */
-
     h2 {
         margin: 8vh 0;
     }
 
-    /* Nav */
+        /* Nav */
     nav {
         flex-direction: column;
         align-items: flex-start;
@@ -144,7 +134,7 @@
         width: 100%;
     }
 
-    /* Section "Faire un don" */
+        /* Section "Faire un don" */
     #choix_prix {
         flex-direction: column;
         gap: 3vh;
